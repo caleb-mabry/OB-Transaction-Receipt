@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
-
+    <script src="index.js" defer></script>
     <title>Transaction Receipt</title>
   </head>
   <body>
@@ -22,7 +22,7 @@
       <div id="top-receipt">
         <h1 id="top-title">Transaction Successful</h1>
         <div id="top-description">
-          Transfer of -$300 to <span id="users-name">Winsdom Umanah</span> was
+          Transfer of <span id="paymentAmount">$xxx</span> to <span id="users-name">Winsdom Umanah</span> was
           successful
         </div>
         <div class="circle bottom right"></div>
@@ -37,27 +37,29 @@
         </div>
         <div class="row" id="details">
           <div class="title">Recipient Details</div>
-          <div class="info">Agness Winifred Benson</div>
+          <div class="info" id="recipientDetails">Agness Winifred Benson</div>
         </div>
         <div class="row" id="type">
           <div class="title">Transaction Type</div>
-          <div class="info">Transfer</div>
+          <div class="info" id="transactionType">Transfer</div>
         </div>
         <div class="row" id="number">
           <div class="title">Transaction Number</div>
-          <div class="info">d7366cb8-f4ae-4115-9d95-407df9209ba7</div>
+          <div class="info" id="transactionNumber">
+            d7366cb8-f4ae-4115-9d95-407df9209ba7
+          </div>
         </div>
         <div class="row" id="date">
           <div class="title">Transaction Date</div>
-          <div class="info">Nov 17th, 2023 05:04:04</div>
+          <div class="info" id="transactionDate"">Nov 17th, 2023 05:04:04</div>
         </div>
         <div class="row" id="status">
           <div class="title">Payment Status</div>
-          <div class="info">Successful</div>
+          <div class="info" id="paymentStatus">Successful</div>
         </div>
         <div class="row" id="amount">
           <div class="title">Amount</div>
-          <div class="info">-$300</div>
+          <div class="info" id="paymentAmount">-$300</div>
         </div>
       </div>
     </div>
